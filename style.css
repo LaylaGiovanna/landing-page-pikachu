@@ -46,6 +46,14 @@ main{
     margin: 0px var(--space-default);
 }
 
+.pikachu-image{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
 .title{
     position: relative;
     grid-column: 1/-1;
@@ -99,5 +107,6 @@ main{
 }
 
 footer{
-    background-color: yellowgreen;
+    text-align: center;
+    color: var(--second-color);
 }
