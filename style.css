@@ -19,16 +19,83 @@ body{
     flex-direction: column;
     padding-top: var(--space-default);
     padding-bottom: 24px;
+    font-family: 'Righteous', cursive;
 }
 
-header{
-    background-color: violet;
+header{    
     height: 48px;
 }
 
-main{
-    background-color: tomato;
+.logo{
+    margin-left: var(--space-default);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    text-decoration: none;
+    color: var(--second-color);
+    font-size: 32px;
+    font-family: 'Righteous', cursive;
+}
+
+main{    
     flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr) ;
+    margin-left: var(--space-default);
+    margin-right: var(--space-default);
+    margin: 0px var(--space-default);
+}
+
+.title{
+    position: relative;
+    grid-column: 1/-1;
+    place-self: center;
+}
+
+.title__text{
+    font-size: 20vw;
+    color: white;
+}
+
+.title__transparent{
+    position: absolute;
+    font-size: 27vw;
+    top: -50%;
+    left: 50%;
+    z-index: -1;
+    color: #FFFFFF33;
+    /* ou color: #fff5 */
+    transform: translateX(-50%);
+}
+
+.description{
+    grid-column: 1/7;
+    color: var(--second-color);
+    place-self: center start;
+
+}
+
+.description__title{
+    font-size: 64px;
+}
+
+.description__text{
+    font-size: 20px;
+    width: 500px;
+}
+
+.action{
+    grid-column: 7/-1;
+    background-color: var(--second-color);
+    place-self: center end;
+    height: 100px;
+    width: 411px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    text-decoration: none;
 }
 
 footer{
